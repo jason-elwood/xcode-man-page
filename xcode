@@ -1,0 +1,315 @@
+.\" Manpage for Xcode.
+.\" Contact jason.elwood@yahoo to correct errors or typos.
+.TH man 1 "13 June 2022" "1.0" "Xcode man page"
+.SH NAME
+xcode \- A cheat sheet for Xcode users.
+.SH SYNOPSIS
+Rather than the traditional options list you would find in a Terminal program
+manual, this manual will use the following syntax that should help you search for
+the commands and features you want: (The commands are in long hand which I hope
+helps readability.)
+
+As a reminder, type "/" and enter a word or part of a word to search this
+document.
+
+.B Display Interface 
+[ Command + Control + Up Arrow ] 
+.br
+.B Toggle Breakpoint           
+[ Command + Backslash ]
+
+.SH DESCRIPTION
+Xcode does not come installed with a manual page (and why should it?). This file attempts to be a
+reference for some of Xcode's more common and lesser know keyboard shortcuts,
+useful features, etc.. In essence I hope in time it will become the man page we
+never got with Xcode.
+
+The following is an incomplete list of features that may be of interest to you:
+
+.B Keyboard Shortcuts:
+
+.B Accept Completion
+.RS 8
+[Tab] - Use with Show Completion and Next Completion.
+Accepts the highlighted code completion.
+
+.RE
+.B Activate Breakpoints
+.RS 8
+[Command + y] - Toggles all breakpoints on/off.
+
+.RE
+.B Add Breakpoint
+.RS 8
+[Command + Backslash (/)] - Adds breakpoint to selected line.
+
+.RE
+.B Analyze
+.RS 8
+[Shift + Command + b] - Runs Analyze on your project.
+
+.RE
+.B Beginning Of Line
+.RS 8
+[Command + Left Arrow] - Move cursor to the beginning of the line.
+
+.RE
+.B Bottom Of File
+.RS 8
+[Command + Down Arrow] - Move cursor to the bottom of the file.
+
+.RE 
+.B Build
+.RS 8
+[Command + b] - Build your project.
+
+.RE
+.B Center Selection
+[Control + l (L)] - Move cursor to the middle of the file vertically. 
+
+.RE
+.B Clean
+.RS 8
+[Shift + Command + K] - Runs Clean on your app. (Removes product files, object files, etc.)
+
+.RE
+.B Clear Console
+.RS 8
+[Command + K] - Clears all console output.
+
+.RE
+.B Comment Selection
+.RS 8
+[Command + Backslash(/)] - Comments the currently selected line(s) of code a comment.
+
+.RE
+.B Display Interface
+.RS 8 
+[Command + Control + Backslash] - This command will open a file in Xcode that
+displays just variables,  method signatures, and comments. This is an easy and
+quick way to get an idea of how a file works and can improve understanding of
+unfamiliar code bases.
+
+.RE
+.B Documentation
+.RS 8
+[Shift + Command + 0] - Open Documentation in Xcode.
+
+.RE
+.B Documentation Comment
+.RS 8
+[Command + Option + Backslash (/)] - Creates a boilerplate documentation comment
+at function. Includes place holders for Method and Argument descriptions.
+
+.RE
+.B Documentation for Selected Text
+.RS 8
+[Shift + Command + Backslash (/)](Command + ?) - Quick, inline documentation for the selected text.
+
+.RE
+.B End Of Line
+.RS 8
+[Command + Right Arrow] - Move cursor to the end of the line.
+
+.RE
+.B Find In File
+.RS 8
+[Command + f] - Allows you to find and/or replace a word or subword in file.
+
+.RE
+.B Find In Project
+.RS 8
+[Shift + Command + f] - Allows you to find and/or replace a word or subword in project.
+
+.RE
+.B Find Next
+.RS 8
+[Command + g] - Use during a search, after a [Command + f] for example, to go to the next instance of search term.
+
+.RE
+.B Find Previous
+.RS 8
+[Shift + Command + g] - Use during a search, after a [Command + f] for example, to go to the previous instance of search term.
+
+.RE
+.B Fold Method/Class
+.RS 8
+[Command + Option + Left Arrow] - Folds down the method or class, displaying only the signature. Unfold with [Command + Option + Right Arrow] (See Unfold Method/Class)
+
+.RE
+.B Goto Line
+.RS 8
+[Command + L] - Opens a dialog that lets you enter the line number you want to jump to.
+
+.RE
+.B Indent Code
+.RS 8 
+[Control + i] - Select the text that needs indentation reformatted or
+Command + a to select all text first. Then executing this shortcut fixes all
+indentation issues.
+
+.RE
+.B Next Completion
+.RS 8
+[Control + .] - .B Use with Show Completion and Accept Completion. 
+While code completion is displayed, use this shortcut to advance down the list of available options.
+
+.RE
+.B Next Word
+.RS 8
+[Option + Right Arrow] - Move cursor to the end of the next word.
+
+.RE
+.B Open File
+.RS 8
+[Command + o] - Open a file. Same as File -> Open.
+
+.RE
+.B Open Window Tab
+.RS 8
+[Command + t] - Opens a new window tab. A window tab has its own set of
+sub-tabs. Window tabs can be renamed to describe how you will use the tab.
+
+.RE
+.B Preferences
+.RS 8
+[Command + ,] - Open the preferences dialog.
+
+.RE
+.B Previous Word
+.RS 8
+[Option + Left Arrow] - Move cursor to the beginning of the previous word.
+
+.RE
+.B Profile
+.RS 8
+[Command + i] - Builds your app and opens Instruments.
+
+.RE
+.B Quick Help
+.RS 8
+[Shift + Command + Backslash (/)](Command + ?) - Same as clicking the help menu option.
+
+.RE
+.B Quick Open
+.RS 8
+[Shift + Command + o] - Opens a filter that allows you to enter/search a file, method,
+class, etc. Hit enter to open the file.
+
+.RE
+.B Run
+.RS 8
+[Command + R] - Runs your project on the selected device or simulator.
+
+.RE
+.B Run Last Test
+.RS 8
+[Command + Option + Control + g] - A convenience shortcut for running the last
+executed test.
+
+.RE
+.B Show Completions
+.RS 8
+[Control + Space] - Use with Next Completion and Accept Completion.
+Displays code completion. Great for when Xcode code completion is being pesky. For example, use this shortcut after typing @ for a list of available property wrappers.
+
+.RE
+.B Show Document Items
+.RS 8
+[Control + 6] - Opens a filter that allows you to navigate a document items by
+Signature, ToDo, FixMe, and Mark Comment.
+
+.RE
+.B Show Library
+.RS 8
+[Shift + Command + l] - Toggles the Library overlay. In the source editor this
+displays code snippets, image assets, and color assets. In a storyboard it
+shows library of UI objects, image assets and color assets.
+
+.RE
+.B Switch Inspectors
+.RS 8
+[Command + Option + (1-3)] - Toggle through the Inspector Panels.
+.br
+1) File Inspector
+.br
+2) History Inspector
+.br
+3) Quick Help Inspector
+
+.RE
+.B Switch Navigators
+.RS 8
+[Command + (1-9)] - Toggle through the Navigator Panels.
+.br
+1) Project Navigator
+.br
+2) Source Control Navigator
+.br
+3) Symbol Navigator
+.br
+4) Find Navigator
+.br
+5) Issue Navigator
+.br
+6) Test Navigator
+.br
+7) Debug Navigator
+.br
+8) Breakpoint Navigator
+.br
+9) Report Navigator
+
+.RE
+.B Swith Tabs
+.RS 8
+[Shift + Command + { or }] - Switch tabs easily when you have multiple files
+open,
+
+.RE
+.B Swith Tabs
+.RS 8
+[Shift + Command + { or }] - Switch tabs easily when you have multiple files
+open.
+
+.RE
+.B Test
+.RS 8
+[Command + U] - Runs tests on your project.
+
+.RE 
+.B Toggle Breakpoint 
+.RS 8
+[Command + Backslash (/)] - Toggles breakpoint on the currently selected line. Equal to clicking in the margin.
+
+.RE
+.B Toggle Minimap
+.RS 8
+[Command + Control + Shift + m] - Toggle the source code minimap on/off.
+
+.RE
+.B Toggle Preview
+.RS 8
+[Command + Option + Enter] - In a SwiftUI file this toggles the UI preview
+window. This also toggles the preview in a Storyboard.
+
+.RE
+.B Top Of File
+.RS 8
+[Command + Up Arrow] - Move cursor to the top of the file.
+
+.RE
+.B Unfold Method/Class
+.RS 8
+[Command + Option + Right Arrow] - Unfolds the method or class signature. Fold with [Command + Option + Left Arrow] (See fold Method/Class)
+
+.RE
+
+.SH OPTIONS
+The xcode manpage does not take any options. 
+.SH SEE ALSO
+https://developer.apple.com/documentation/xcode
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Jason Elwood (jason.elwood@yahoo.com)

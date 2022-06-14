@@ -1,6 +1,6 @@
 # Xcode Manpage
 
-Xcode Manpage is the man page we didn't know we needed for Xcode.
+Xcode Man Page is the man page we didn't know we needed for Xcode.
 
 ## Installation
 
