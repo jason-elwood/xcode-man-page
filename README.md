@@ -11,6 +11,7 @@ sudo mkdir /usr/local/man/man1
 ```
 
 2) Download the Xcode manpage:
+
 Just click on the xcode.1.gz file and download it to your system.
 
 3) Copy the manpage to your direcory:
